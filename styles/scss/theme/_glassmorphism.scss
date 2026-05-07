@@ -1,0 +1,53 @@
+// ═══════════════════════════════════════════════════════════
+//  GLASSMORPHISM — Glass Effects & Utilities
+// ═══════════════════════════════════════════════════════════
+
+.glass-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: 16px;
+}
+
+.glass-card-strong {
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 16px;
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.glass-sidebar {
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-right: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+.glass-input {
+  background: rgba(26, 26, 26, 0.7) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(56, 189, 248, 0.15) !important;
+  color: #F5F5F5 !important;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border-color: rgba(56, 189, 248, 0.5) !important;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.15) !important;
+    background: rgba(26, 26, 26, 0.9) !important;
+  }
+
+  &::placeholder {
+    color: #6B6B6B;
+  }
+}

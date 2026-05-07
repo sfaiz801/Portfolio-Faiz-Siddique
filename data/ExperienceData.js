@@ -1,0 +1,32 @@
+export const experienceTimeline = [
+  {
+    id: 1,
+    duration: "2024 - Present",
+    type: "education",
+    title: "Bachelor of Computer Applications (BCA)",
+    organization: "University / College",
+    description: "Currently pursuing my BCA degree, focusing on core computer science concepts, software engineering, and advanced web technologies.",
+    icon: "FaUniversity",
+    highlights: ["Computer Science", "Web Development", "Algorithms"],
+  },
+  {
+    id: 2,
+    duration: "2023 - 2024",
+    type: "experience",
+    title: "Freelance Web Developer",
+    organization: "Self-Employed",
+    description: "Built responsive, modern web applications for various clients. Specialized in MERN stack and Next.js, focusing on performance and UI/UX.",
+    icon: "FaCode",
+    highlights: ["React", "Next.js", "Client Communication"],
+  },
+  {
+    id: 3,
+    duration: "2023",
+    type: "course",
+    title: "Full Stack Web Development",
+    organization: "Indixpert Academy",
+    description: "Completed intensive training in modern web development covering frontend design and backend architecture.",
+    icon: "FaGraduationCap",
+    highlights: ["MERN Stack", "JavaScript", "Responsive Design"],
+  },
+];

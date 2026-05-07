@@ -1,0 +1,56 @@
+.whatsappBtn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 1200;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  font-size: 2rem;
+  z-index: 2;
+}
+
+/* Pulsing effect */
+.ping {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #25D366;
+  z-index: 1;
+  opacity: 0.6;
+  animation: ping-anim 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping-anim {
+  75%, 100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsappBtn {
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+}
